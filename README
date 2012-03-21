@@ -1,0 +1,17 @@
+This project is the implementation of a turbo code, an error correction code.
+
+More about turbocodes: http://en.wikipedia.org/wiki/Turbo_code
+
+The subject can be found here: https://www.rocq.inria.fr/secret/Jean-Pierre.Tillich/enseignement/X2011/liste-projets/projetTurbo.pdf
+
+============
+Structure:
+
+all java files are in src and are used this way:
+
+	- Cst contains all parameters used in the algorithm (including the permutation and both convolutifs coders
+	- Coder and Decoder are used to encode and decode the message
+	- Canal add noise in the signal by introducing errors in the message
+	- Diff gives the number of errors in the decoded message
+	- CoderConv represents the convolutif coder that is used
+	- Help provides some debugging tools to print the state of convolutif coders for example
